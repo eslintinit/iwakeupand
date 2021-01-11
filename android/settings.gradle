@@ -1,0 +1,5 @@
+rootProject.name = 'iwakeupand'
+include ':@kevinsperrine_react-native-directed-scrollview'
+project(':@kevinsperrine_react-native-directed-scrollview').projectDir = new File(rootProject.projectDir, '../node_modules/@kevinsperrine/react-native-directed-scrollview/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
